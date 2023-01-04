@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    width: 80px;
+    height: 80px;
+    border: 5px solid white;
+    animation: ganee 2s linear infinite;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader:hover{
+    background-color: rgb(85, 0, 255);
+    border: none;
+    animation: ganee 2s linear infinite;
+}
+@keyframes ganee {
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
